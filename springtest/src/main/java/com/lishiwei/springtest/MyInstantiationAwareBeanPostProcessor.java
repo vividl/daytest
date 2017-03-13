@@ -1,3 +1,4 @@
+/*
 package com.lishiwei.springtest;
 
 import org.springframework.beans.BeansException;
@@ -6,9 +7,11 @@ import org.springframework.beans.factory.config.InstantiationAwareBeanPostProces
 
 import java.beans.PropertyDescriptor;
 
+*/
 /**
  * Created by lishiwei on 17-2-9.
- */
+ *//*
+
 public class MyInstantiationAwareBeanPostProcessor extends InstantiationAwareBeanPostProcessorAdapter {
     @Override
     public Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName) throws BeansException {
@@ -58,3 +61,4 @@ public class MyInstantiationAwareBeanPostProcessor extends InstantiationAwareBea
         return super.postProcessAfterInitialization(bean, beanName);
     }
 }
+*/

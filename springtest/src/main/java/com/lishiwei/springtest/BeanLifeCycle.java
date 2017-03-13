@@ -1,3 +1,4 @@
+/*
 package com.lishiwei.springtest;
 
 import org.springframework.beans.factory.BeanFactory;
@@ -9,9 +10,11 @@ import org.springframework.core.io.support.ResourcePatternResolver;
 
 import java.io.IOException;
 
+*/
 /**
  * Created by lishiwei on 17-2-9.
- */
+ *//*
+
 public class BeanLifeCycle {
     public static void main(String[] args) throws IOException {
         ResourcePatternResolver resourcePatternResolver = new PathMatchingResourcePatternResolver();
@@ -31,3 +34,4 @@ public class BeanLifeCycle {
         ((ConfigurableBeanFactory) beanFactory).destroySingletons();
     }
 }
+*/
