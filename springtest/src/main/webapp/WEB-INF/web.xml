@@ -23,7 +23,7 @@
     <!--Spring MVC 处理的URL-->
     <servlet-mapping>
         <servlet-name>springtest</servlet-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>*.do</url-pattern>
     </servlet-mapping>
 
 
