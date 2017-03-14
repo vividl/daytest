@@ -9,11 +9,11 @@ import java.util.Date;
  */
 @Data
 public class User {
-    private long userId;
+    private long   userId;
     private String userName;
-    private long credits;
+    private long   credits;
     private String password;
-    private Date lastVisit;
+    private Date   lastVisit;
     private String lastIp;
 
     public User(String userName, String password) {

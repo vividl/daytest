@@ -8,7 +8,7 @@ import java.lang.reflect.Field;
  * Created by lishiwei on 17-2-23.
  */
 public class AMain {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Unsafe unsafe = getUnsafe();
         Class aClass = A.class;
         A a = null;
@@ -26,7 +26,7 @@ public class AMain {
         try {
             Field field = Unsafe.class.getDeclaredField("theUnsafe");
             field.setAccessible(true);
-            return (Unsafe)field.get(null);
+            return (Unsafe) field.get(null);
 
         } catch (Exception e) {
         }

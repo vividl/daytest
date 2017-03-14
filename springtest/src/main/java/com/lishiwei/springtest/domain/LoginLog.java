@@ -9,8 +9,8 @@ import java.util.Date;
  */
 @Data
 public class LoginLog {
-    private long loginLogId;
-    private long userId;
+    private long   loginLogId;
+    private long   userId;
     private String ip;
-    private Date loginDatetime;
+    private Date   loginDatetime;
 }

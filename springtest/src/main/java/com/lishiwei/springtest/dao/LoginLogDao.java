@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
  * Created by lishiwei on 17-3-13.
  */
 @Repository
-public class LoginLogDao implements IBaseDao{
+public class LoginLogDao implements IBaseDao {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;

@@ -6,12 +6,12 @@ import org.springframework.beans.factory.*;
 /**
  * Created by lishiwei on 17-2-8.
  */
-public class Car implements BeanFactoryAware, BeanNameAware, InitializingBean, DisposableBean{
-    private String brand;
-    private String color;
-    private int maxSpeed;
+public class Car implements BeanFactoryAware, BeanNameAware, InitializingBean, DisposableBean {
+    private String      brand;
+    private String      color;
+    private int         maxSpeed;
     private BeanFactory beanFactory;
-    private String beanName;
+    private String      beanName;
 
     public Car() {
         System.out.println("调用Car()构造函数。");
@@ -53,10 +53,10 @@ public class Car implements BeanFactoryAware, BeanNameAware, InitializingBean, D
     @Override
     public String toString() {
         return "Car{" +
-                "brand='" + brand + '\'' +
-                ", color='" + color + '\'' +
-                ", maxSpeed=" + maxSpeed +
-                '}';
+               "brand='" + brand + '\'' +
+               ", color='" + color + '\'' +
+               ", maxSpeed=" + maxSpeed +
+               '}';
     }
 
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {

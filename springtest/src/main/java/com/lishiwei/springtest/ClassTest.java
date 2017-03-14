@@ -20,7 +20,7 @@ public class ClassTest {
             Class<?> clazz = loader.loadClass("com.lishiwei.springtest.Car");
             Constructor<?> constructor = clazz.getConstructor(String.class, String.class, int.class);
             Car car = (Car) constructor.newInstance("infinity", "black", 100);
-            System.out.println("aa" +car.getClass());
+            System.out.println("aa" + car.getClass());
 
 //            Object car = constructor.newInstance("ford", "white", 100);
             Method setBrand = clazz.getMethod("setBrand", String.class);

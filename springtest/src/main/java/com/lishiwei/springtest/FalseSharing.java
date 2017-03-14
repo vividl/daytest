@@ -1,20 +1,21 @@
 package com.lishiwei.springtest;
 
-public class  FalseSharing implements Runnable{
+public class FalseSharing implements Runnable {
     public final static long ITERATIONS = 500L * 1000L * 100L;
-    private int arrayIndex = 0;
+    private             int  arrayIndex = 0;
 
     private static ValueNoPadding[] longs;
+
     public FalseSharing(final int arrayIndex) {
         this.arrayIndex = arrayIndex;
     }
 
     public static void main(final String[] args) throws Exception {
-        for(int i=1;i<10;i++){
+        for (int i = 1; i < 10; i++) {
             System.gc();
             final long start = System.currentTimeMillis();
             runTest(i);
-            System.out.println("Thread num "+i+" duration = " + (System.currentTimeMillis() - start));
+            System.out.println("Thread num " + i + " duration = " + (System.currentTimeMillis() - start));
         }
 
     }
@@ -45,6 +46,7 @@ public class  FalseSharing implements Runnable{
             longs[arrayIndex].value = 0L;
         }
     }
+
     //cache line
     public final static class ValuePadding {
         protected long p1, p2, p3, p4, p5, p6, p7;
@@ -52,6 +54,7 @@ public class  FalseSharing implements Runnable{
         protected long p9, p10, p11, p12, p13, p14;
         protected long p15;
     }
+
     public final static class ValueNoPadding {
         protected long p1, p2, p3, p4, p5, p6, p7;
         protected volatile long value = 0L;

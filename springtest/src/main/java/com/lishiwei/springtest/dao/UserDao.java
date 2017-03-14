@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
  * Created by lishiwei on 17-2-10.
  */
 @Repository
-public class UserDao implements IBaseDao<User>{
+public class UserDao implements IBaseDao<User> {
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
