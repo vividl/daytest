@@ -1,0 +1,8 @@
+{
+    "servers": [
+        {
+            "name": "lis",
+            "address": "https://anisette-server-latest.onrender.com"
+        }
+    ]
+}
